@@ -15,9 +15,10 @@
 <style>
     body {
         font-family: 'Martel Sans', sans-serif;
+        background-color: black;
     }
 
-    .img-fluid {
+    #netflixLogo {
         max-width: 180px;
         max-width: 75.6px;
     }
@@ -82,12 +83,25 @@
         font-size: 10px;
         padding: 7px 5px 3px 5px;
     }
+
+    h5 {
+        color: white;
+        font-size: 15px;
+        margin-left: -10px;
+        padding: 0;
+    }
+
+    .tv-shows {
+        display: flex;
+        justify-content: end;
+    }
 </style>
 
 <body>
     <!-- Start of Marti's navbar for Netflix project -->
     <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="#"><img class="img-fluid" src="./assets/netflix_logo.png" alt=""></a>
+        <a class="navbar-brand" href="#"><img id="netflixLogo" class="img-fluid" src="./assets/netflix_logo.png"
+                alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -162,11 +176,110 @@
         </div>
     </nav>
     <!-- End of Marti's navbar for Netflix project -->
-    <div class="container-fluid" id="emptySpaceContainer">
-        <div class="container-fluid" id="randomEmptyPlaceholder">
-            <p>Piotr's Section</p>
+
+    <!-- Start of Piotr's Section -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2 px-0">
+                <h3 class="text-light ml-4">TV Shows</h3>
+            </div>
+            <div class="col-2"><button class="btn btn-outline-light dropdown-toggle genre-button">
+                    Genres
+                </button></div>
+            <div class="col-8 tv-shows">
+                <div>
+                    <div class="btn-group me-2 mr-3" role="group" aria-label="First group">
+                        <button type="button" class="btn btn-outline-secondary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-text-left" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M2 12.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
+                            </svg>
+                        </button>
+                        <button type="button" class="btn btn-outline-secondary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-grid" viewBox="0 0 16 16">
+                                <path
+                                    d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
+
+    <div class="container-fluid ml-4 mr-5">
+        <h5><strong>Trending Now</strong></h5>
+        <div class="row mb-4">
+            <div class="col-lg-2 px-1 py-1">
+                <img src="/assets/media/media10.jpg" alt="" class="img-fluid" />
+            </div>
+            <div class="col-lg-2 px-1 py-1">
+                <img src="/assets/media/media11.jpg" alt="" class="img-fluid" />
+            </div>
+            <div class="col-lg-2 px-1 py-1">
+                <img src="/assets/media/media12.jpg" alt="" class="img-fluid" />
+            </div>
+            <div class="col-lg-2 px-1 py-1">
+                <img src="/assets/media/media13.jpg" alt="" class="img-fluid" />
+            </div>
+            <div class="col-lg-2 px-1 py-1">
+                <img src="/assets/media/media13.jpg" alt="" class="img-fluid" />
+            </div>
+            <div class="col-lg-2 px-1 py-1">
+                <img src="/assets/media/media15.jpg" alt="" class="img-fluid" />
+            </div>
+
+        </div>
+        <h5><strong>Watch it again</strong></h5>
+        <div class="row mb-4">
+            <div class="col-lg-2 px-1 py-1">
+                <img src="/assets/media/media10.jpg" alt="" class="img-fluid" />
+            </div>
+            <div class="col-lg-2 px-1 py-1">
+                <img src="/assets/media/media11.jpg" alt="" class="img-fluid" />
+            </div>
+            <div class="col-lg-2 px-1 py-1">
+                <img src="/assets/media/media12.jpg" alt="" class="img-fluid" />
+            </div>
+            <div class="col-lg-2 px-1 py-1">
+                <img src="/assets/media/media13.jpg" alt="" class="img-fluid" />
+            </div>
+            <div class="col-lg-2 px-1 py-1">
+                <img src="/assets/media/media13.jpg" alt="" class="img-fluid" />
+            </div>
+            <div class="col-lg-2 px-1 py-1">
+                <img src="/assets/media/media15.jpg" alt="" class="img-fluid" />
+            </div>
+
+        </div>
+        <h5><strong>New Releases</strong></h5>
+        <div class="row mb-4">
+            <div class="col-lg-2 px-1 py-1">
+                <img src="/assets/media/media10.jpg" alt="" class="img-fluid" />
+            </div>
+            <div class="col-lg-2 px-1 py-1">
+                <img src="/assets/media/media11.jpg" alt="" class="img-fluid" />
+            </div>
+            <div class="col-lg-2 px-1 py-1">
+                <img src="/assets/media/media12.jpg" alt="" class="img-fluid" />
+            </div>
+            <div class="col-lg-2 px-1 py-1">
+                <img src="/assets/media/media13.jpg" alt="" class="img-fluid" />
+            </div>
+            <div class="col-lg-2 px-1 py-1">
+                <img src="/assets/media/media13.jpg" alt="" class="img-fluid" />
+            </div>
+            <div class="col-lg-2 px-1 py-1">
+                <img src="/assets/media/media15.jpg" alt="" class="img-fluid" />
+            </div>
+
+        </div>
+    </div>div>
+    <!-- End of Piotr's Section -->
+
     <!-- Start of Marti's footer for Netflix project -->
 
     <div class="container-fluid footerContainer">
@@ -185,7 +298,8 @@
                 <p>Privacy</p>
                 <p>Contact Us</p>
                 <button id="serviceCodeBtn">Service Code</button>
-                <p class="text-nowrap mt-3" id="copyrightNotice">&copy; 1997-2019 Netflix, Inc. {i-7868d76f8dfygd8fgfd}
+                <p class="text-nowrap mt-3" id="copyrightNotice">&copy; 1997-2019 Netflix, Inc.
+                    {i-7868d76f8dfygd8fgfd}
                 </p>
             </div>
             <div class="col-lg-2 mt-3">
