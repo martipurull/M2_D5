@@ -85,12 +85,21 @@
   }
 
   h5 {
-    color: white;
-    font-size: 15px;
+    color: lightgrey;
+    font-size: 17px;
+    margin-top: 10px;
     margin-left: -10px;
     padding: 0;
   }
-
+  .btn-success{
+    background-color: lightgrey;
+  }
+  .password{
+    color:lightgrey;
+  }
+  .phone{
+    color:lightgrey;
+  }
   .tv-shows {
     display: flex;
     justify-content: end;
@@ -185,12 +194,12 @@
             <div class="row">
               <div class="col-4">
                 <h5><strong>MEMBERSHIP & BILLINGS</strong></h5>
-                <button type="button" class="btn btn-success">Cancel Membership</button>
+                <button type="button" class="btn btn-light">Cancel Membership</button>
               </div>
               <div class="col-4">
-                <p>student@strive.school</p>
-                <p>Password:******</p>
-                <p>Phone:+48572215555</p>
+                <p><strong>student@strive.school</strong></p>
+                <p class="password">Password:******</p>
+                <p class="phone">Phone:+48572215555</p>
               </div>
               <div class="col-4 d-flex justify-content-end">
                 <a href="#">Change account email</a>
@@ -200,8 +209,7 @@
               <div class="col-4">
               </div>
               <div class="col-4 mt-2">
-                <p><img class="img-fluid" src="./paypal.jpg" alt="" width="80" height="40" />admin@strive.school
-                </p>
+                <p><img src="./paypal.jpg" alt="paypal" width="80" height="40"/><strong>admin@strive.school</strong></p>
               </div>
               <div class="col-4 d-flex justify-content-end">
                 <a href="#">Update payment info</a>
@@ -219,16 +227,16 @@
               </div>
             </div>
             <div class="row  border-top mt-3">
-              <div class="col-4">
-                <h2>Plan details</h2>
+              <div class="col-4 text-muted text-uppercase">
+                <h5><strong>Plan details</strong></h5>
               </div>
               <div class="col-4 mt-2">
                 <p><strong>Premium</strong><img src="./ultrahd.jpg" alt="" width="80" height="30" /></p>
               </div>
             </div>
-            <div class="row  border-top">
-              <div class="col-4">
-                <h2>Settings</h2>
+            <div class="row  border-top text-uppercase">
+              <div class="col-4 text-muted">
+                <h5><strong>Settings</strong></h5>
               </div>
               <div class="col-4">
                 <a href="#">Parental Controls</a><br>
@@ -240,14 +248,13 @@
               </div>
             </div>
             <div class="row  border-top mt-3">
-              <div class="col-4">
-                <h2>My Profile</h2>
+              <div class="col-4 text-muted text-uppercase">
+                <h5><strong>My Profile</strong></h5>
               </div>
               <div class="col-8">
-
                 <div class="row">
                   <div class="col-4 mt-2">
-                    <p><img src="./strive.jpg" width="60" height="20" alt="">Strive Student</p>
+                    <p><img src="./strive.jpg" width="60" height="20" alt=""><strong>Strive Student</strong></p>
                     <a href="#">Test participation</a><br>
                     <a href="#">Manage download devices</a><br>
                     <a href="#">Activate a device</a><br>
