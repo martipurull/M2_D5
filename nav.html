@@ -34,9 +34,26 @@
     .d-flex:hover {
         opacity: 0.6;
     }
+
+    #avatarDropdownMenuImg {
+        width: 30px;
+        height: 30px;
+    }
+
+    #avatarDropdownMenuCaret {
+        width: 10px;
+        height: 10px;
+    }
+
+    li a {
+        color: white;
+        font-size: 0.8rem;
+        margin-top: 7px;
+    }
 </style>
 
 <body>
+    <!-- Start of Marti's navbar for Netflix project -->
     <nav class="navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="#"><img class="img-fluid" src="./assets/netflix_logo.png" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -63,15 +80,26 @@
             </ul>
             <div class="d-flex">
                 <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="max-height: 100px;">
-                    <li class="nav-item">
+                    <li class="nav-item mr-3">
                         <img data-toggle="modal" data-target="#modalSearchForm" src="./assets/search-white.svg" alt="">
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item mr-3">
                         <a href="#">KIDS</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item mr-3">
                         <img data-toggle="modal" data-target="#notificationsMenu" src="./assets/bell-fill-white.svg"
                             alt="">
+                    </li>
+                    <li class="dropdown mr-3">
+                        <img src="./assets/avatar.png" type="button" id="avatarDropdownMenuImg" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                        <img src="./assets/caret-down-fill-white.svg" type="button" id="avatarDropdownMenuCaret"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="dropdown-menu" aria-labelledby="avatarDropdownMenuButton">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -103,9 +131,17 @@
 
         </div>
     </nav>
+    <!-- End of Marti's navbar for Netflix project -->
+
+    <!-- Start of Marti's footer for Netflix project -->
 
 
 
+
+
+
+
+    <!-- End of Marti's footer for Netflix project -->
 
 
 
