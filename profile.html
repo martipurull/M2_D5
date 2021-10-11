@@ -10,122 +10,86 @@
       integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
       crossorigin="anonymous"
     />
-    <title>Profile</title>
-
-    <style>
-
-      .container{
-        margin-top: 20px;
-      }
-      body {
-        background-color: black;
-      }
-      h1 {
-        text-align: center;
-      }
-      .margin-left{
-          margin-left: 460px;
-      }
-      .inputMargin{
-         margin-left: 0px;
-         margin-top: 3px;
-             }
-      /* .log{
-          margin-left: 250px;
-          margin-top: 2px;
-      } */
-
-      /* .input-group {
-        position: absolute;
-        left: 520px;
-        top: 150px;
-        width: 200px; */
-      }
-      /* #button1 {
-        position: absolute;
-        left: 520px;
-        top: 150px;
-        width: 200px;
-      } */
-    </style>
-  </head>
-
+     <style>
+    body{
+      background-color: black;
+    }
+    .form-control:valid {
+      width:400px;
+      background-color:#343a40 !important;
+    }
+    input::placeholder{
+      color: white;
+    }
+    .footerButton-1{
+      width:100px;
+    }
+    .footerButton-2{
+      width: 150px;
+    }
+    .footerButton-3{
+      width: 250px;
+    }
+    .title{
+      margin-top: 100px;
+      margin-bottom: -50px;
+      margin-right: 50px;
+      color: white;
+      font-size: 80px;
+    }
+  </style>
   <body>
-    <!-- Muhammad's Part -->
-
-    <h1 class="text-light profile-title">Edit Profile</h1>
     <div class="container">
-      <div class="row">
-        <div class="col-6">
-          <img
-            class="margin-left"
-            src="/image/logo.png"
-            width="70px"
-            height="70px"
-          />
+      <h1 class="title"><strong>Edit Profile</strong></h1>
+      <div class="row border-top mt-5">
+        <div class="col-3 mt-5">
+        <div class="container-image">
+          <img src="./strive.jpg" width="200" height="170" alt=""/>
+          <!-- <img  src="./edit2.jpg" width="30" height="30" alt=""/> -->
         </div>
-        <div class="col-6">
-          <input
-            class="inputMargin"
-            value=""
-            type="text"
-            placeholder="Strive School"
-          />
-          <h4 class="">Language</h4>
-          <button class="btn btn-outline-light dropdown-toggle w-30">
-            English
-          </button>
+        </div>
+        <div class="col-9 mt-5">
+          <input type="text" class="form-control bg-secondary" placeholder="Strive Student">
+          <p class="mt-5 text-muted">Language:</p>
+          <div class="dropdown">
+            <button class="btn btn-black text-white dropdown-toggle border" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Polish
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">English</a>
+              <a class="dropdown-item" href="#">German</a>
+              <a class="dropdown-item" href="#">Poland</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 mt-5">
+        </div>
+        <div class="col-9 mt-5 border-top">
+          <p class="text-muted mt-4">Maturity Settings:</p>
+          <input type="text" class="form-control2 bg-secondary" placeholder="All MATURITY RATINGS">
+          <h6 class="mt-3 text-white">Show all titles of all maturity ratings for this profile</h6>
+          <button type="button" class="btn btn-dark text-white mt-2">EDIT</button>
+        </div>
+        <div class="col-3 mt-5">
+        </div>
+        <div class="col-9 mt-5 border-top">
+          <p class="text-muted mt-4">Autoplay Controls</p>
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheck1">
+            <label class="custom-control-label text-muted" for="customCheck1">Autoplay next episodes in a series an all devices.</label>
+          </div>
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheck2">
+            <label class="custom-control-label text-muted" for="customCheck2">Autoplay previews while browsing on all devices</label>
+          </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-6"></div>
-        <div class="col-6">
-          <h4 >Maturity Setting:</h4>
-          <button class="btn btn-outline-light mt-2">
-            All Maturity Rating
-          </button>
-          <h4>show title of all Maturity rating for this profile:</h4>
-          <button class="btn btn-outline-light mt-2">Edit</button>
-        </div>
-        <!-- here is working fine -->
-        <div class="row">
-          <div class="col-6"></div>
-          <div class="col-6">
-            <h4>autoplay Controls:</h4>
-            <div class="checkbox">
-      <input
-        class="form-check-input"
-        type="checkbox"
-        value=""
-        id="defaultCheck1"
-      />
-         <label class="form-check-label" for="defaultCheck1">
-        Autoplay next episode in a series on all device
-      </label>
-      <br />
-      <input
-        class="form-check-input"
-        type="checkbox"
-        value=""
-        id="defaultCheck1"
-      />
-      <label class="form-check-label" for="defaultCheck1">
-        Autoplay preview while browsing on all device
-      </label>  </div> 
-        
-
-        <!-- assssdddd -->
+      <div class="col-12 border-top mt-4 text-center">
+      <button type="button" class="footerButton-1 btn btn-light text-muted mt-4 mx-2">SAVE</button>
+      <button type="button" class="footerButton-2 btn btn-dark text-muted mt-4 mx-2">CANCEL</button>
+      <button type="button" class="footerButton-3 btn btn-dark text-muted mt-4 mx-2">DELETE</button>
       </div>
     </div>
-
-    <div></div>
-
-    
-      
-    </div>
-    <button class="btn btn-outline-light mt-2">Save</button>
-    <button class="btn btn-outline-light mt-2">Cancel</button>
-    <button class="btn btn-outline-light mt-2">Delete Profile</button>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
